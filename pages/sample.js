@@ -6,6 +6,8 @@ const Sample = ({data}) => {
   return (
     <div>
      <p>Name: {data.u.name}</p> 
+     <p>Email: {data.u.email}</p> 
+
     </div>
   )
 }
