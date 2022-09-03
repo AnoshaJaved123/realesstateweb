@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.163.0",
     "@react-oauth/google": "^0.2.6",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.0.2",
     "emailjs-com": "^3.2.0",
+    "flowbite": "^1.5.3",
     "flowbite-react": "^0.1.10",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^8.5.1",
@@ -21,6 +23,7 @@
     "mongoose": "^6.5.4",
     "multer": "^1.4.5-lts.1",
     "next": "12.2.5",
+    "next-connect": "^0.13.0",
     "nookies": "^2.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -31,7 +34,10 @@
     "vercel": "^28.2.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
     "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5"
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
