@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="flex flex-wrap -mx-4">
                   <div className="flex w-full mb-20 flex-wrap">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font text-teal-500 lg:w-1/3 lg:mb-0 mb-4">Master Cleanse Reliac Heirloom</h1>
-                    <p className="lg:pl-6 lg:w-2/3 mx-auto leading-7elaxed text-black">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+                    <p className="lg:pl-6 lg:w-2/3 mx-auto leading-7elaxed text-black">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them man bun deep jianbing selfies heirloom.</p>
                   </div>
 
                   <div className="relative md:w-1/2 px-4 mb-8 md:mb-6">
@@ -197,7 +197,7 @@ export default function Home() {
         <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-col text-center w-full mb-5">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-teal-500">Real Estate Projects</h1>
-            <p className="lg:w-2/3 mx-auto leading-7elaxed text-black">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            <p className="lg:w-2/3 mx-auto leading-7elaxed text-black">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
           </div>
           <div className="flex flex-wrap -m-2 text-center">
             <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -253,7 +253,7 @@ export default function Home() {
                 {/* <Image  width={40} height={40} alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://apiwp.thelocal.com/wp-content/uploads/2018/12/6d67730d16af04f3f956389d4cc244af808b8381c23b1e3d218ecd792de14fa8-616x431.jpg" /> */}
                 <Image  width={100} height={100} alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src={'/u2.jpg'} />
 
-                <p className="leading-7elaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <p className="leading-7elaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                 <span className="inline-block h-1 w-10 rounded bg-teal-500 mt-6 mb-4" />
                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
                 <p className="text-gray-500">Government Employer</p>
@@ -263,7 +263,7 @@ export default function Home() {
               <div className="h-full text-center">
                 {/* <Image width={40} height={40}  alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" /> */}
                 <Image  width={100} height={100} alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src={'/u1.jpg'} />
-                <p className="leading-7elaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <p className="leading-7elaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                 <span className="inline-block h-1 w-10 rounded bg-teal-500 mt-6 mb-4" />
                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
                 <p className="text-gray-500">Business Man</p>
@@ -273,7 +273,7 @@ export default function Home() {
               <div className="h-full text-center">
                 {/* <Image width={40} height={40}  alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" /> */}
                 <Image  width={100} height={100} alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src={'/u3.jpg'} />
-                <p className="leading-7elaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <p className="leading-7elaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90s cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                 <span className="inline-block h-1 w-10 rounded bg-teal-500 mt-6 mb-4" />
                 <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM</h2>
                 <p className="text-gray-500">CEO</p>

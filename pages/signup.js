@@ -49,7 +49,8 @@ const Signup = () => {
     let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signupAPI`, {
       method: "POST",
       headers: {
-        // Accept: "application/json",
+        "Access-Control-Allow-Origin" : "*", 
+        "Access-Control-Allow-Credentials" : true 
       },
       body: formData,
     })

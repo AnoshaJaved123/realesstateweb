@@ -58,7 +58,7 @@ const Footer = () => {
               <a className="text-gray-600 hover:text-gray-800">Terms and Conditions</a>
             </li>
                       <li>
-              <a className="text-gray-600 hover:text-gray-800">FAQ's</a>
+              <a className="text-gray-600 hover:text-gray-800">FAQs</a>
             </li>
             <li>
               <a className="text-gray-600 hover:text-gray-800">Privacy Policy</a>
