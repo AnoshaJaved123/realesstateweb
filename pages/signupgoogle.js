@@ -37,34 +37,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const data = { name, email, password,address, pin, phone, city, state };
-    // fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signup`, {
-    //   method: "POST",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-type": "application/json",
-    //   },
-    //   body: JSON.stringify(data),
-    // }).then((res) => res.json());
 
-
-  //   toast.success('Successfuly Sign up', {
-  //     position: "bottom-right",
-  //     autoClose: 5000,
-  //     hideProgressBar: false,
-  //     closeOnClick: true,
-  //     pauseOnHover: true,
-  //     draggable: true,
-  //     progress: undefined,
-  //   });
-
-
-  //   setName('')
-  //   setEmail('')
-  //   setPassword('')
-
-
-  // router.push('/login')
 
   }
 

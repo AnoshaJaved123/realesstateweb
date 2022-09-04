@@ -10,10 +10,10 @@ import dotenv from 'dotenv'
 dotenv.config()
 var jwt = require('jsonwebtoken');
 
-const bucketName = process.env.NEXT_PUBLIC_AWS_BUCKET
-const region = process.env.NEXT_PUBLIC_AWS_Region
-const accessKeyId = process.env.NEXT_PUBLIC_AWS_Access_key_ID
-const secretAccessKey = process.env.NEXT_PUBLIC_AWS_Secret_access_key
+const bucketName = process.env.AWS_BUCKET
+const region = process.env.AWS_Region
+const accessKeyId = process.env.AWS_Access_key_ID
+const secretAccessKey = process.env.AWS_Secret_access_key
  
 let url = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-11.jpg"
 

@@ -13,7 +13,7 @@ const handler = async (req, res) => {
                   
                    if (req.body.email == user.email) {
                     // var token = jwt.sign({name:user.name, email:user.email}, process.env.JWT_SECRET , { expiresIn: '2d' });
-                    var token = jwt.sign({userId:user._id}, process.env.JWT_SECRET , { expiresIn: '7d' });
+                    var token = jwt.sign({userId:user._id}, process.env.NEXT_PUBLIC_JWT_SECRET , { expiresIn: '7d' });
                     var n = user.name
                     var e = user.email
                     var i = user.img
@@ -35,7 +35,7 @@ const handler = async (req, res) => {
                         
                  })
                 await u.save()
-                var token = jwt.sign({user:u._id}, process.env.JWT_SECRET , { expiresIn: '7d' });
+                var token = jwt.sign({user:u._id}, process.env.NEXT_PUBLIC_JWT_SECRET , { expiresIn: '7d' });
                 // console.log("token",token)
                 // var n = user.name
                 // var e = user.email
