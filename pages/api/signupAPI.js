@@ -51,7 +51,7 @@ handler.post(async (req, res) => {
         ContentType:req.file.mimetype
     }
     const command = new PutObjectCommand(params)
-     s3.send(command)
+     await s3.send(command)
  //GET OBJECT FROM AWS   
      const getObjectParams ={
         Bucket: bucketName,
