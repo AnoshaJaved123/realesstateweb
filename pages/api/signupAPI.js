@@ -10,10 +10,10 @@ import dotenv from 'dotenv'
 dotenv.config()
 var jwt = require('jsonwebtoken');
 
-const bucketName = process.env.AWS_BUCKET
-const region = process.env.AWS_Region
-const accessKeyId = process.env.AWS_Access_key_ID
-const secretAccessKey = process.env.AWS_Secret_access_key
+const bucketName = process.env.NEXT_PUBLIC_AWS_BUCKET
+const region = process.env.NEXT_PUBLIC_AWS_Region
+const accessKeyId = process.env.NEXT_PUBLIC_AWS_Access_key_ID
+const secretAccessKey = process.env.NEXT_PUBLIC_AWS_Secret_access_key
  
 let url = "https://icon-library.com/images/no-picture-available-icon/no-picture-available-icon-11.jpg"
 
@@ -67,7 +67,7 @@ handler.post(async (req, res) => {
             let u = new User({
                 name:req.body.name,
                 email:req.body.email,
-                password:CryptoJS.AES.encrypt(req.body.password,process.env.AES_SECRET).toString(),
+                password:CryptoJS.AES.encrypt(req.body.password,process.env.NEXT_PUBLIC_AES_SECRET).toString(),
                 img:url,
               
          })

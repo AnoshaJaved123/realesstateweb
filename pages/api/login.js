@@ -9,11 +9,11 @@ const handler = async (req, res) => {
                 let user = await User.findOne({email: req.body.mail})
              
                 if(user){
-                const bytes  = CryptoJS.AES.decrypt(user.password, process.env.AES_SECRET);
+                const bytes  = CryptoJS.AES.decrypt(user.password, process.env.NEXT_PUBLIC_AES_SECRET);
                 let decryptedpass = bytes.toString(CryptoJS.enc.Utf8)
                if (req.body.mail == user.email && req.body.password == decryptedpass) {
                 // var token = jwt.sign({name:user.name, email:user.email}, process.env.JWT_SECRET , { expiresIn: '2d' });
-                var token = jwt.sign({userId:user._id}, process.env.JWT_SECRET , { expiresIn: '7d' });
+                var token = jwt.sign({userId:user._id}, process.env.NEXT_PUBLIC_JWT_SECRET , { expiresIn: '7d' });
                 var name = user.name
                 var email = user.email
                 var img = user.img
