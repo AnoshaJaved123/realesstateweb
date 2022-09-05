@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { Spinner } from 'flowbite-react';
 
 const Signup = () => {
   const [name, setName] = useState('')
@@ -17,29 +18,15 @@ const Signup = () => {
   const [city, setcity] = useState('DummyCity')
   const [state, setstate] = useState('DummyState')
   const [file, setFile] = useState()
+  const [loading, setloading] = useState(false)
 
-  // useEffect(() => {
-  //   if (localStorage.getItem('token')) {
-  //     router.push('/')
-  //   }
-  // }, [])
 
   const router = useRouter()
-  const handleChange = (e) => {
-    if (e.target.name == 'name') {
-      setName(e.target.value)
 
-    }
-    else if (e.target.name == 'email') {
-      setEmail(e.target.value)
-
-    } else if (e.target.name == 'password')
-      setPassword(e.target.value)
-  }
 
   const submit = async event => {
     event.preventDefault()
-
+    setloading(true)
     const formData = new FormData();
     formData.append("image", file)
     formData.append("name", name)
@@ -49,16 +36,16 @@ const Signup = () => {
     let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signupAPI`, {
       method: "POST",
       headers: {
-        "Access-Control-Allow-Origin" : "*", 
-        "Access-Control-Allow-Credentials" : true 
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true
       },
       body: formData,
     })
     const response2 = await res.json()
     console.log(response2)
     if (response2.success) {
-      
-       toast.success('Account Created! Now Login', {
+      setloading(false)
+      toast.success('Account Created! Now Login', {
         position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -68,10 +55,10 @@ const Signup = () => {
         progress: undefined,
       });
       setTimeout(() => {
-              router.push('/login')
-      }, 1000); 
+        router.push('/login')
+      }, 1000);
     }
-    else{
+    else {
       toast.error('Account not created. Try again', {
         position: "bottom-right",
         autoClose: 5000,
@@ -80,9 +67,9 @@ const Signup = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      }); 
+      });
     }
-  
+
   }
 
 
@@ -147,6 +134,10 @@ const Signup = () => {
                 </div>
                 <div className="text-center lg:text-left">
                   <button type="submit" className="inline-block bg-transparent text-lg my-2 hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-500 hover:border-transparent">
+                 
+                    {loading && <>
+                      <Spinner aria-label="Spinner button example"  />
+                    </>}
                     Sign Up
                   </button>
                   <p className="text-sm font-semibold mt-2 pt-1 mb-0">

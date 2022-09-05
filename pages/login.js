@@ -12,6 +12,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Cookies from 'js-cookie'
+import { Spinner } from 'flowbite-react';
 
 const Login = () => {
 
@@ -22,13 +23,14 @@ const Login = () => {
   const [password, setPassword] = useState('')
   const [picurl, setPicurl] = useState('')
   const [user, setUser] = useState({})
+  const [loading, setloading] = useState(false)
+
   const router = useRouter()
 
   const responseGoogle = async (response) => {
-    //  console.log(response);
+
     localStorage.setItem('googletoken', response.token);
     const userObject = jwt_decode(response.credential);
-    // console.log(userObject);
     localStorage.setItem('user', JSON.stringify(userObject));
     const { name, sub, picture, email } = userObject;
     const doc = {
@@ -39,13 +41,7 @@ const Login = () => {
     };
     setName(name)
     setEmail(email)
-    //  setPicurl(doc.image)
-    //  console.log("name",name)
-    //  console.log("email",email)
-    //  console.log("doc",doc)
-    //  console.log("doc.image",doc.image)
-    //  console.log("picurl",picurl)
-
+  
     const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signupgoogle`, {
       method: "POST",
       headers: {
@@ -62,11 +58,13 @@ const Login = () => {
     })
     const response2 = await res.json()
     if (response2.success) {
+
       Cookies.set('token',response2.token)
       localStorage.setItem('token',response2.token)
       Cookies.set('googleimg',doc.image)
       Cookies.set('googlename',name)
       Cookies.set('googleemail',email)
+
       toast.success('Successfuly Logged In', {
         position: "bottom-right",
         autoClose: 5000,
@@ -111,10 +109,8 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setloading(true)
     const data = { mail, password };
-    // console.log(data)
-
- 
     let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/login`, {
       method: "POST",
       headers: {
@@ -124,7 +120,6 @@ const Login = () => {
       body: JSON.stringify(data),
     })
     let response = await res.json()
-    // console.log(response)
 
     if (response.success) {
       localStorage.setItem('token',response.token)
@@ -135,7 +130,7 @@ const Login = () => {
       Cookies.set('googleimg',response.img)
       Cookies.set('googlename',response.name)
       Cookies.set('googleemail',response.email)
-
+      setloading(false)
         toast.success('Successfuly Logged In', {
       position: "bottom-right",
       autoClose: 5000,
@@ -217,6 +212,9 @@ const Login = () => {
                 </div>
                 <div className="ml-5 flex flex-wrap text-center lg:text-left">
                   <button type="button" onClick={handleSubmit} className="inline-block bg-transparent text-lg my-8 hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-500 hover:border-transparent">
+                  {loading && <>
+                      <Spinner aria-label="Spinner button example" className='mx-1' />
+                    </>}
                     Login
                   </button>
                   <div className='mt-10 mr-5 ml-5'>--OR--</div>

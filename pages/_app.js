@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }) {
         img={img}
       />}
       <LoadingBar
-        color='#FFD700'
+        color='#008080'
         waitingTime={400}
         shadow={true}
         progress={progress}
