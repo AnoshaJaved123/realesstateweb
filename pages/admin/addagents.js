@@ -93,11 +93,7 @@ const Addagents = () => {
           pauseOnHover
         />
     <ThemeProvider theme={theme}>
-    <style jsx global>{`
-        Footer {
-          display: none;
-        }
-       `}</style>
+  
     <FullLayout>
     {/* <h2 className='text-center text-2xl font-bold text-gray-700'></h2> */}
     <Grid container spacing={0}>

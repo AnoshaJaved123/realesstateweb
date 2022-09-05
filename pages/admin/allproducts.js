@@ -49,11 +49,7 @@ const Allproducts = ({property}) => {
   }
   return (
     <ThemeProvider theme={theme}>
-    <style jsx global>{`
-        Footer {
-          display: none;
-        }
-       `}</style>
+
     <FullLayout>
     <Grid container spacing={0}>
       <Grid item xs={12} lg={12}>
