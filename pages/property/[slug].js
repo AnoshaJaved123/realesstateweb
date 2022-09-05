@@ -19,6 +19,7 @@ const Post = ({ property, error }) => {
 
   const [token, settoken] = useState(null)
   const [item, setitem] = useState(property)
+  const form = useRef();
 
 
 
@@ -33,9 +34,6 @@ const Post = ({ property, error }) => {
   if (error == 404) {
     return <Error statusCode={404} />
   }
-/* eslint-enable no-use-before-define */
-const form = useRef();
-/* eslint-enable no-use-before-define */
 
   
   const sendEmail = (e) => {
