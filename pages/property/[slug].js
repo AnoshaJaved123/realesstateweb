@@ -33,7 +33,8 @@ const Post = ({ property, error }) => {
   if (error == 404) {
     return <Error statusCode={404} />
   }
-  const form = useRef();
+  const form = useRef(); // eslint-disable-next-line no-use-before-define
+
   
   const sendEmail = (e) => {
     e.preventDefault();
