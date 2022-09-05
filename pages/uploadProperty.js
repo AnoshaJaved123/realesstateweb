@@ -359,8 +359,10 @@ const UploadProperty = () => {
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">Contact Phone</label>
                 <input
                   pattern='^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$'
-                  // eslint-disable-next-line no-use-before-define
+                  /* eslint-enable no-use-before-define */
                   errormessage="* Invalid phone Number"
+                  /* eslint-enable no-use-before-define */
+
                   required={true}
                   placeholder='Enter Valid Number' value={phone} onChange={(e) => { setPhone(e.target.value); setErrorFlag(e.target.checkValidity()); }} type="text" name="phone" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 
@@ -386,10 +388,10 @@ const UploadProperty = () => {
               </>
                 :
                 <button className=" flex mx-auto bg-transparent disabled:bg-teal-300 text-lg my-2 hover:bg-teal-700 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-700 hover:border-transparent">
-                {loading && <div className='mx-1'>
-                      <Spinner aria-label="Spinner button example"  />
-                    </div>}
-                Submit</button>}
+                  {loading && <div className='mx-1'>
+                    <Spinner aria-label="Spinner button example" />
+                  </div>}
+                  Submit</button>}
 
             </div>
 
