@@ -19,7 +19,8 @@ const Post = ({ property, error }) => {
 
   const [token, settoken] = useState(null)
   const [item, setitem] = useState(property)
-  const form = useRef();
+
+  const form = useRef('');
 
 
 
@@ -38,7 +39,8 @@ const Post = ({ property, error }) => {
   
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_k879749', 'template_vpkrhrs', form.current, 'X4XBTffcoQwhSpWRS')
+    const value = form.current
+    emailjs.sendForm('service_k879749', 'template_vpkrhrs', value , 'X4XBTffcoQwhSpWRS')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
