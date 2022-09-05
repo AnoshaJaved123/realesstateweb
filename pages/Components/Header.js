@@ -34,7 +34,7 @@ const Header = ({ user, logout, name, img }) => {
         <span onMouseOver={() => { setdropdown(true) }} onMouseLeave={() => { setdropdown(false) }}>
           {dropdown && <div onMouseOver={() => { setdropdown(true) }} onMouseLeave={() => { setdropdown(false) }} className='absolute right-10 bg-white shadow-md font-semibold top-8 px-5 py-4 w-32  '>
             <ul>
-              <a href={'/'}> <li className='py-1 text-sm hover:text-sky-700'>My Account</li></a>
+              <a href={'/myAccount'}> <li className='py-1 text-sm hover:text-sky-700'>My Account</li></a>
               <a href={'/uploadProperty'}><li className='py-1 text-sm hover:text-sky-700'>Add Property</li></a>
               <li onClick={logout} className='py-1 text-sm hover:text-sky-700'>Log Out</li>
             </ul>

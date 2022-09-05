@@ -14,7 +14,7 @@ module.exports = {
     extend: {},
   },
   images: {
-    domains: ['lh3.googleusercontent.com', 'realestatebuketwebdev.s3.ap-northeast-3.amazonaws.com'], //Domain of image host
+    domains: ['lh3.googleusercontent.com', 'icon-library.com', 'realestatebuketwebdev.s3.ap-northeast-3.amazonaws.com'], //Domain of image host
   },
   plugins: [require("flowbite/plugin")],
 }

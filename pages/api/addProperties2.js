@@ -60,9 +60,9 @@ handler.post(async (req, res) => {
     console.log('req.body', JSON.parse(JSON.stringify(req.body)))
 
 
-    console.log('req.file', req.files.image)
-    console.log('req.file', req.files.image2)
-    console.log('req.file', req.files.image3)
+    // console.log('req.file', req.files.image)
+    // console.log('req.file', req.files.image2)
+    // console.log('req.file', req.files.image3)
 
     const { userId } = jwt.verify(req.body.token, process.env.NEXT_PUBLIC_JWT_SECRET)
     req.userId = userId

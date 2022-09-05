@@ -64,10 +64,7 @@ handler.post(async (req, res) => {
     // console.log('req.file', req.files.image2)
     // console.log('req.file', req.files.image3)
 
-    const { userId } = jwt.verify(req.body.token, process.env.NEXT_PUBLIC_JWT_SECRET)
-    req.userId = userId
-
-    console.log("user",userId)
+   
     if (req.files.image) {
         console.log(req.files.image[0].buffer)
         let filesname = uuidv4() + "files1";
@@ -146,7 +143,7 @@ handler.post(async (req, res) => {
     let r = await Property.findOneAndUpdate(
         {_id:req.body.pId},
         { $set: {      
-        user: userId,
+        user: null,
         category: req.body.category,
         type: req.body.type,
         subtype: req.body.subtype,

@@ -136,7 +136,7 @@ const Signup = () => {
                   <button type="submit" className="inline-block bg-transparent text-lg my-2 hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-500 hover:border-transparent">
                  
                     {loading && <>
-                      <Spinner aria-label="Spinner button example"  />
+                      <Spinner aria-label="Spinner button example" className="mx-1"   />
                     </>}
                     Sign Up
                   </button>
