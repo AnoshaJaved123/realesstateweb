@@ -27,7 +27,7 @@ const Header = ({ user, logout, name, img, email }) => {
           alt="Flowbite Logo"
         />
         <span className=" text- font-semibold dark:text-white">
-          Company 
+           
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
