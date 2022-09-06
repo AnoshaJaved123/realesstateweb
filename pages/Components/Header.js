@@ -2,63 +2,100 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import 'tailwindcss/tailwind.css'
-import { GrUserAdmin } from 'react-icons/gr';
+import { BsShieldLock } from 'react-icons/bs';
+import { FaRegUserCircle } from 'react-icons/fa';
+
+import { Navbar, Dropdown, Avatar } from 'flowbite-react';
 
 
-const Header = ({ user, logout, name, img }) => {
+const Header = ({ user, logout, name, img, email }) => {
   const [headername, setName] = useState(name)
+  const [headeremail, setEmail] = useState(email)
   const [headerimg, setImg] = useState(img)
-  const [dropdown, setdropdown] = useState(false)
 
 
-  return (
-    <div className='navbar relative z-10 flex flex-col md:flex-row md:justify-start justify-center items-center py-2 shadow-md sticky top-0  bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200'>
-      <div className="logo mr-auto md:mx-5">
-        <Link href={'/'}><a><Image src={'/icon.png'} alt='img' width={70} height={40}></Image></a></Link>
-      </div>
-      <div className="nav">
-        <ul className='flex items-center space-x-3 font-normal md:text-lg'>
-          <Link href={'/'}><a className=" font-semibold hover:text-teal-700 text-black" >HOME</a></Link>
-          <Link href={'/agents'}><a className=" font-semibold hover:text-teal-700 text-black" >AGENTS</a></Link>
-          <Link href={'/services'}><a className=" font-semibold hover:text-teal-700 text-black" >SERVICES</a></Link>
-          <Link href={'/rent'}><a className=" font-semibold hover:text-teal-700 text-black" >RENT</a></Link>
-          <Link href={'/buy'}><a className=" font-semibold hover:text-teal-700 text-black" >BUY</a></Link>
-          <Link href={'/contact'}><a className=" font-semibold hover:text-teal-700 text-black" >CONTACT</a></Link>
-
-        </ul>
-      </div>
-
-
-
-      <div className="cursor-pointer items-center cart absolute right-0 mx-4 flex">
-        <span onMouseOver={() => { setdropdown(true) }} onMouseLeave={() => { setdropdown(false) }}>
-          {dropdown && <div onMouseOver={() => { setdropdown(true) }} onMouseLeave={() => { setdropdown(false) }} className='absolute right-10 bg-white shadow-md font-semibold top-8 px-5 py-4 w-32  '>
-            <ul>
-              <a href={'/myAccount'}> <li className='py-1 text-sm hover:text-sky-700'>My Account</li></a>
-              <a href={'/uploadProperty'}><li className='py-1 text-sm hover:text-sky-700'>Add Property</li></a>
-              <li onClick={logout} className='py-1 text-sm hover:text-sky-700'>Log Out</li>
-            </ul>
-
-          </div>}
-          {user.value && <> <div className='flex flex-wrap '><p className='mx-2 my-1 p-1 text-teal-700'>{headername}</p>
-            <Image alt='realestate' referrerPolicy="no-referrer" width={40} height={40} className="w-9 h-9 md: mr-5 object-cover object-center rounded-full inline-block" src={headerimg} />
-          </div></>
-          }
+  return (<div className="shadow-md">
+    <Navbar
+      fluid={true}
+      rounded={true}
+       
+    >
+      <Navbar.Brand href={'/'}>
+        <img
+          src={'/icon.png'}
+          className="mr-1 h-6 sm:h-9"
+          alt="Flowbite Logo"
+        />
+        <span className=" text- font-semibold dark:text-white">
+          Company 
         </span>
-        {!user.value && <><Link href={'/loginadmin'} ><a><div className='flex mx-5 p-1'><GrUserAdmin className='mx-2' /><p className='text-sm text-stone-600'>Admin</p></div></a></Link>
+      </Navbar.Brand>
+      <div className="flex md:order-2">
+      {user.value && <>
+        <Dropdown
+          arrowIcon={false}
+          inline={true}
+          label={<Avatar alt="User settings" img={headerimg} rounded={true} />}
+        >
+         
+          <Dropdown.Header>
+            <span className="block text-sm">
+             {headername}
+            </span>
+            <span className="block truncate text-sm font-medium">
+              {headeremail}
+            </span>
+          </Dropdown.Header>
+          <Dropdown.Item>
+          <Navbar.Link href={'/myAccount'} >
+            My Account
+            </Navbar.Link>
+          </Dropdown.Item>
+          <Dropdown.Item >
+          <Navbar.Link href={'/uploadProperty'} >
+            Add Property
+            </Navbar.Link>
+          </Dropdown.Item>
+  
+          <Dropdown.Divider />
+          <Dropdown.Item onClick={logout}>
+            Log out
+          </Dropdown.Item>
+        </Dropdown>
+        </>}
+        {!user.value && <><Link href={'/loginadmin'} ><a><button className=' flex mx-auto bg-transparent text-sm my-2 hover:bg-stone-500 text-stone-700 font-semibold hover:text-white py-0 px-1'><BsShieldLock className='mx-1 my-1' />Admin</button></a></Link>
           <Link href={'/login'} ><a>
-            <button className=' flex mx-auto bg-transparent text-sm my-1 mx-2 hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-0 px-1 border border-teal-500 hover:border-transparent'>Login</button>
+            <button className=' flex mx-auto bg-transparent text-sm my-2 hover:bg-stone-500 text-stone-700 font-semibold hover:text-white py-0 px-1'><FaRegUserCircle className='mx-1 my-1'/>Login</button>
           </a></Link></>}
-
-
-
-
-        </div>
-
-
-
-        </div>
+        <Navbar.Toggle />
+      </div>
+      <Navbar.Collapse>
+      
+        <Navbar.Link
+         href={'/'}
+          active={true}
+        >
+          HOME
+        </Navbar.Link>
+        <Navbar.Link href={'/agents'} >
+        AGENTS
+        </Navbar.Link>
+        <Navbar.Link href={'/rent'}>
+        RENT
+        </Navbar.Link>
+        <Navbar.Link href={'/buy'}>
+        BUY
+        </Navbar.Link>
+        <Navbar.Link href={'/services'}>
+        SERVICES
+        </Navbar.Link>
+        <Navbar.Link href={'/contact'}>
+        CONTACT
+        </Navbar.Link>
+      </Navbar.Collapse>
+    </Navbar>
+  </div>
   )
 }
 
-        export default Header
+export default Header

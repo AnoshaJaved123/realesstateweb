@@ -150,12 +150,12 @@ const UploadProperty = () => {
         {token && <> <form onSubmit={submit} method="POST" encType="multipart/form-data" className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">
             <div className="flex flex-col text-center w-full mb-3">
-              <div className="text-start px-4 ml-2 mt-4 p-1 text-white text-lg bg-teal-700">Select the Property type and purpose </div>
+              <div className="text-start px-4 ml-2 mt-4 p-1 text-white text-lg bg-stone-700">Select the Property type and purpose </div>
             </div>
             <div className="p-2 w-1/2">
               <div className="relative mt-3">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600 mr-6">Select Category</label>
-                <select value={category} onChange={e => setcategory(e.target.value)} type="text" name="category" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:border-teal-700 text-base pl-3 pr-10 w-full">
+                <select value={category} onChange={e => setcategory(e.target.value)} type="text" name="category" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-stone-200 focus:border-stone-700 text-base pl-3 pr-10 w-full">
                   <option value={'Rent'} >Rent</option>
                   <option value={'Sale'} >Sale</option>
                 </select>
@@ -164,7 +164,7 @@ const UploadProperty = () => {
             <div className="p-2 w-1/2">
               <div className="relative mt-3">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600 mr-6">Select Property Type</label>
-                <select value={type} onChange={e => setType(e.target.value)} type="text" name="type" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:border-teal-700 text-base pl-3 pr-10 w-full">
+                <select value={type} onChange={e => setType(e.target.value)} type="text" name="type" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-stone-200 focus:border-stone-700 text-base pl-3 pr-10 w-full">
                   <option value={'Homes'} >Homes</option>
                   <option value={'Plots'} >Plots</option>
                   <option value={'Commercial'} >Commercial</option>
@@ -175,7 +175,7 @@ const UploadProperty = () => {
             <div className="p-2 w-1/2">
               <div className="relative mt-3">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600 mr-6">Select Subtype</label>
-                {type === 'Homes' && <select value={subtype} onChange={e => setSubtype(e.target.value)} type="text" name="subtype" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:border-teal-700 text-base pl-3 pr-10 w-full">
+                {type === 'Homes' && <select value={subtype} onChange={e => setSubtype(e.target.value)} type="text" name="subtype" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-stone-200 focus:border-stone-700 text-base pl-3 pr-10 w-full">
                   <option value={'House'} >House</option>
                   <option value={'Flat'} >Flat</option>
                   <option value={'Upper Portion'} >Upper Portion</option>
@@ -185,7 +185,7 @@ const UploadProperty = () => {
                   <option value={'PentHouse'} >PentHouse</option>
 
                 </select>}
-                {type === 'Plots' && <select value={subtype} onChange={e => setSubtype(e.target.value)} type="text" name="subtype" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:border-teal-700 text-base pl-3 pr-10 w-full">
+                {type === 'Plots' && <select value={subtype} onChange={e => setSubtype(e.target.value)} type="text" name="subtype" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-stone-200 focus:border-stone-700 text-base pl-3 pr-10 w-full">
                   <option value={'Residential Plot'} >Residential Plot</option>
                   <option value={'Commercial Plot'} >Commercial Plot</option>
                   <option value={'Agricultural Land'} >Agricultural Land</option>
@@ -193,7 +193,7 @@ const UploadProperty = () => {
                   <option value={'Plot File'} >Plot File</option>
                   <option value={'Plot Form'} >Plot Form</option>
                 </select>}
-                {type === 'Commercial' && <select value={subtype} onChange={e => setSubtype(e.target.value)} type="text" name="subtype" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:border-teal-700 text-base pl-3 pr-10 w-full">
+                {type === 'Commercial' && <select value={subtype} onChange={e => setSubtype(e.target.value)} type="text" name="subtype" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-stone-200 focus:border-stone-700 text-base pl-3 pr-10 w-full">
                   <option value={'Office'} >Office</option>
                   <option value={'Shop'} >Shop</option>
                   <option value={'Warehouse'} >Warehouse</option>
@@ -207,7 +207,7 @@ const UploadProperty = () => {
             <div className="p-2 w-1/2">
               <div className="relative mt-3">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600 mr-6">Select City</label>
-                <select value={city} onChange={e => setCity(e.target.value)} type="text" name="city" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:border-teal-700 text-base pl-3 pr-10 w-full">
+                <select value={city} onChange={e => setCity(e.target.value)} type="text" name="city" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-stone-200 focus:border-stone-700 text-base pl-3 pr-10 w-full">
                   <option value={'Lahore'} >Lahore</option>
                   <option value={'Karachi'} >Karachi</option>
                   <option value={'Islamabad'} >Islamabad</option>
@@ -221,15 +221,15 @@ const UploadProperty = () => {
               </div>
             </div>
             <div className="flex flex-col text-center w-full mb-3">
-              <div className="text-start px-4 ml-2 mt-4 p-1 px-4 text-white text-lg bg-teal-700">Upload your property details </div>
+              <div className="text-start px-4 ml-2 mt-4 p-1 px-4 text-white text-lg bg-stone-700">Upload your property details </div>
             </div>
             <div className="p-2 w-1/2">
               <label htmlFor="name" className="leading-7 text-sm text-gray-600">Size</label>
               <div className='flex'>
                 <div className="flex">
-                  <input value={size} onChange={e => setsize(e.target.value)} type="Number" name="size" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" /></div>
+                  <input value={size} onChange={e => setsize(e.target.value)} type="Number" name="size" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" /></div>
                 <div className='flex'>
-                  <select value={unit} onChange={e => setUnit(e.target.value)} type="text" name="unit" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-1 focus:ring-teal-200 focus:border-teal-700 text-base pl-1 pr-2 w-full">
+                  <select value={unit} onChange={e => setUnit(e.target.value)} type="text" name="unit" className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-1 focus:ring-stone-200 focus:border-stone-700 text-base pl-1 pr-2 w-full">
                     <option value={'Square Feet'} >Square Feet</option>
                     <option value={'Square Yards'} >Square Yards</option>
                     <option value={'Square Meters'} >Square Meters</option>
@@ -243,10 +243,10 @@ const UploadProperty = () => {
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">Price</label>
                 <div className="flex">
-                  <span className="inline-flex items-center px-3 text-sm text-white bg-teal-700 rounded-l-md border border-r-0 border-teal-700 dark:bg-teal-700  dark:border-teal-600">
+                  <span className="inline-flex items-center px-3 text-sm text-white bg-stone-700 rounded-l-md border border-r-0 border-stone-700 dark:bg-stone-700  dark:border-stone-600">
                     PKR.
                   </span>
-                  <input value={price} onChange={e => setprice(e.target.value)} type="Number" name="price" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                  <input value={price} onChange={e => setprice(e.target.value)} type="Number" name="price" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                 </div>
               </div>
             </div>
@@ -254,7 +254,7 @@ const UploadProperty = () => {
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">Location</label>
 
-                <input value={location} onChange={e => setLocation(e.target.value)} type="text" name="location" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input value={location} onChange={e => setLocation(e.target.value)} type="text" name="location" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 
 
               </div>
@@ -263,7 +263,7 @@ const UploadProperty = () => {
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">Extra Details</label>
 
-                <input value={desc} onChange={e => setdes(e.target.value)} type="text" name="desc" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input value={desc} onChange={e => setdes(e.target.value)} type="text" name="desc" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                 {(!desc && desc != null || desc.length === 0) && <div className="text-red-500 text-sm mt-3">
                   Please provide the details about your Property
                 </div>}
@@ -314,13 +314,13 @@ const UploadProperty = () => {
               </div>
             </div>
             {type === 'Homes' && <>  <div className="flex flex-col text-center w-full mb-3">
-              <div className="text-start px-4 ml-2 mt-4 p-1 text-white text-lg bg-teal-700">Add extra Features </div>
+              <div className="text-start px-4 ml-2 mt-4 p-1 text-white text-lg bg-stone-700">Add extra Features </div>
             </div>
               <div className="p-2 w-1/2">
                 <div className="relative">
                   <label htmlFor="name" className="leading-7 text-sm text-gray-600">Bedroom(s)</label>
 
-                  <input value={bed} onChange={e => setBed(e.target.value)} type="Number" name="bed" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                  <input value={bed} onChange={e => setBed(e.target.value)} type="Number" name="bed" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 
                 </div>
               </div>
@@ -328,7 +328,7 @@ const UploadProperty = () => {
                 <div className="relative">
                   <label htmlFor="name" className="leading-7 text-sm text-gray-600">Bathrooms(s)</label>
 
-                  <input value={bath} onChange={e => setBath(e.target.value)} type="Number" name="bath" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                  <input value={bath} onChange={e => setBath(e.target.value)} type="Number" name="bath" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 
                 </div>
               </div>
@@ -336,13 +336,13 @@ const UploadProperty = () => {
             </>}
 
             <div className="flex flex-col text-center w-full mb-3">
-              <div className="text-start px-4 ml-2 mt-4 p-1 text-white text-lg bg-teal-700">Contact Person Details </div>
+              <div className="text-start px-4 ml-2 mt-4 p-1 text-white text-lg bg-stone-700">Contact Person Details </div>
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
 
-                <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 
               </div>
             </div>
@@ -350,7 +350,7 @@ const UploadProperty = () => {
               <div className="relative">
                 <label htmlFor="name" className="leading-7 text-sm text-gray-600">Email</label>
 
-                <input value={email} onChange={e => setEmail(e.target.value)} type="text" name="location" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <input value={email} onChange={e => setEmail(e.target.value)} type="text" name="location" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 
               </div>
             </div>
@@ -360,7 +360,7 @@ const UploadProperty = () => {
                 <input
                   pattern='^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$'
                   required={true}
-                  placeholder='Enter Valid Number' value={phone} onChange={(e) => { setPhone(e.target.value); setErrorFlag(e.target.checkValidity()); }} type="text" name="phone" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-700 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                  placeholder='Enter Valid Number' value={phone} onChange={(e) => { setPhone(e.target.value); setErrorFlag(e.target.checkValidity()); }} type="text" name="phone" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-700 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 
 
                 {((!phone && phone != null || phone == 0)) ? <div className="text-red-500 text-sm mt-3">
@@ -375,7 +375,7 @@ const UploadProperty = () => {
               </div>
             </div>
             <div className="p-2 w-full">
-              {phone.length === 0 || desc.length === 0 ? <><button disabled={true} className="disabled:bg-teal-100 flex mx-auto bg-transparent text-lg my-2 hover:bg-teal-700 text-teal-700 font-semibold hover:text-teal-700 py-1 px-4 border border-teal-700 hover:border-transparent">Submit</button>
+              {phone.length === 0 || desc.length === 0 ? <><button disabled={true} className="disabled:bg-stone-100 flex mx-auto bg-transparent text-lg my-2 hover:bg-stone-700 text-stone-700 font-semibold hover:text-stone-700 py-1 px-4 border border-stone-700 hover:border-transparent">Submit</button>
                 <div className="text-red-500 text-sm mt-3 text-center">
                   {phone.length === 0 && <p>Phone Number</p>}
                   {desc.length === 0 && <p>Property Details</p>} (Require)
@@ -383,7 +383,7 @@ const UploadProperty = () => {
                 </div>
               </>
                 :
-                <button className=" flex mx-auto bg-transparent disabled:bg-teal-300 text-lg my-2 hover:bg-teal-700 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-700 hover:border-transparent">
+                <button className=" flex mx-auto bg-transparent disabled:bg-stone-300 text-lg my-2 hover:bg-stone-700 text-stone-700 font-semibold hover:text-white py-1 px-4 border border-stone-700 hover:border-transparent">
                 {loading && <>
                       <Spinner aria-label="Spinner button example"  />
                     </>}
@@ -398,10 +398,10 @@ const UploadProperty = () => {
         {!token && <div className='container'>
           <div className="flex flex-col text-center w-full mb-5">
             <h1 className="sm:text-xl text-xl font-medium title-font mt-24 mb-2 text-gray-900">Login Require</h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base  text-teal-700">Please Login to Post Property Adds.</p>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base  text-stone-700">Please Login to Post Property Adds.</p>
           </div>
           <Link href={'/login'}>
-            <button className=" flex mx-auto bg-transparent text-lg my-2 hover:bg-teal-700 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-700 hover:border-transparent"><AiOutlineUser className='my-1 mx-1' />Login</button>
+            <button className=" flex mx-auto bg-transparent text-lg my-2 hover:bg-stone-700 text-stone-700 font-semibold hover:text-white py-1 px-4 border border-stone-700 hover:border-transparent"><AiOutlineUser className='my-1 mx-1' />Login</button>
           </Link>
         </div>}
       </div>

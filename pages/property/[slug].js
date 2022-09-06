@@ -89,25 +89,25 @@ const Post = ({ property, error }) => {
             <p className="leading-relaxed mb-5 text-gray-600">Ask about the Property details through email or whatsapp.</p>
             <div className="relative mb-4">
               <label htmlFor="" className="leading-7 text-sm text-gray-600">Name</label>
-              <input type="text" id="n" name="n" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <input type="text" id="n" name="n" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative mb-4 hidden">
               <label htmlFor={item.name} className="leading-7 text-sm text-gray-600">Name</label>
-              <input type="text" id={item.name} value={item.name} readOnly={true} name="names" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <input type="text" id={item.name} value={item.name} readOnly={true} name="names" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative mb-4 hidden">
               <label htmlFor={item.email} className="leading-7 text-sm text-gray-600">Email</label>
-              <input type="email" id={item.email} value={item.email} readOnly={true} name="emails" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <input type="email" id={item.email} value={item.email} readOnly={true} name="emails" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative mb-4 ">
               <label htmlFor='e' className="leading-7 text-sm text-gray-600">Email</label>
-              <input type="email" id="e" name="e" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <input type="email" id="e" name="e" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
             <div className="relative mb-4">
               <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-              <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" defaultValue={""} />
+              <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" defaultValue={""} />
             </div>
-            <button type="submit" value="Send" className="text-white bg-teal-600 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">Send</button>
+            <button type="submit" value="Send" className="text-white bg-stone-600 border-0 py-2 px-6 focus:outline-none hover:bg-stone-600 rounded text-lg">Send</button>
           </form>
         </div>
       </div>
@@ -119,10 +119,10 @@ const Post = ({ property, error }) => {
             <h2 className="text-sm title-font text-gray-500 tracking-widest">Real Estate Agency</h2>
             <div className='flex justify-between'>
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">{item.subtype}</h1>
-              <h1 className="text-teal-600 text-end text-xl title-font font-normal mb-4"> {item.type} for {item.category}</h1>
+              <h1 className="text-stone-600 text-end text-xl title-font font-normal mb-4"> {item.type} for {item.category}</h1>
             </div>
             <div className="flex mb-4">
-              <a className="flex-grow border-b-2 border-gray-300 text-teal-600 py-2 text-lg px-1">Details</a>
+              <a className="flex-grow border-b-2 border-gray-300 text-stone-600 py-2 text-lg px-1">Details</a>
 
               <div>
 
@@ -155,7 +155,7 @@ const Post = ({ property, error }) => {
               <div className='flex ml-auto text-end'>
               
               <Tooltip content="Website is on Developer mode" style="light" >
-              <button  className=" text-white bg-teal-700 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 ">SMS</button>
+              <button  className=" text-white bg-stone-700 border-0 py-2 px-6 focus:outline-none hover:bg-stone-600 ">SMS</button>
 
               </Tooltip>
                 

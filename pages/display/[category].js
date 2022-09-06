@@ -73,7 +73,7 @@ console.log('item',item)
                                         </div>
                                     </div>
                                     <Link passHref={true} key={p._id} href={`/property/${p._id}`} ><a>
-                                        <button className='w-full  bg-transparent text-center items-center my-1 mx-1 hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-1 px-1 border border-teal-500 hover:border-transparent'>DETAIL</button>
+                                        <button className='w-full  bg-transparent text-center items-center my-1 mx-1 hover:bg-stone-500 text-stone-700 font-semibold hover:text-white py-1 px-1 border border-stone-500 hover:border-transparent'>DETAIL</button>
                                     </a></Link>
                                 </div>
 

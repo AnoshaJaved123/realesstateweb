@@ -186,7 +186,7 @@ const Login = () => {
           <div className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
             <div className="item-center">
               <Image className='item-center' src='/icon.png' alt='img' width={400} height={300}></Image>
-              <h1 className="text-center sm:text-3xl text-2xl font-medium title-font mb-4 text-teal-600">Real Estate Agency</h1>
+              <h1 className="text-center sm:text-3xl text-2xl font-medium title-font mb-4 text-stone-600">Real Estate Agency</h1>
 
             </div>
             <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
@@ -195,11 +195,11 @@ const Login = () => {
                 <h1 className="text-center text-3xl font-semibold mb-5">Login</h1>
                 {/* Email input */}
                 <div className="mb-6">
-                  <input value={mail} onChange={handleChange} type="email" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" name="mail" placeholder="Email" />
+                  <input value={mail} onChange={handleChange} type="email" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-500 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" name="mail" placeholder="Email" />
                 </div>
                 {/* Password input */}
                 <div className="mb-6">
-                  <input value={password} onChange={handleChange} type="password" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" name="password" placeholder="Password" />
+                  <input value={password} onChange={handleChange} type="password" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-stone-500 focus:bg-white focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" name="password" placeholder="Password" />
                 </div>
                 <div className="flex justify-between items-center mb-6">
                   <div className="form-group form-check">
@@ -211,7 +211,7 @@ const Login = () => {
                   {/* <Link href={'/forgot?token=123'} className="text-gray-800">Forgot password?</Link> */}
                 </div>
                 <div className="ml-5 flex flex-wrap text-center lg:text-left">
-                  <button type="button" onClick={handleSubmit} className="inline-block bg-transparent text-lg my-8 hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-500 hover:border-transparent">
+                  <button type="button" onClick={handleSubmit} className="inline-block bg-transparent text-lg my-8 hover:bg-stone-500 text-stone-700 font-semibold hover:text-white py-1 px-4 border border-stone-500 hover:border-transparent">
                   {loading && <>
                       <Spinner aria-label="Spinner button example" className='mx-1' />
                     </>}

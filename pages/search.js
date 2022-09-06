@@ -12,7 +12,7 @@ const Search = () => {
         <div>
             <header className="text-gray-600 body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                    <div className="flex  lg:w-full flex-wrap items-center text-base md:ml-auto bg-slate-100">
+                    <div className="flex  lg:w-full flex-wrap items-center text-base md:ml-auto bg-stone-100">
                         <div className="flex-grow mx-2 my-2 ">
                             <label htmlFor="name" className="leading-7 text-sm text-black mx-2">Select Category</label>
                             <select value={category} onChange={e => setcategory(e.target.value)} type="text" name="category" className="rounded border appearance-none border-gray-300 py-1 focus:outline-none focus:ring-2 focus:ring-yellow-200 focus:border-yellow-500 text-black pl-3 pr-10 w-full">

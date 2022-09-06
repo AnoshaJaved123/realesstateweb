@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    <div className="bg-teal-700">
+    <div className="bg-stone-700">
       <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
         <p className="text-white text-sm text-center sm:text-left">© 2022 Anosha Javed
         </p>

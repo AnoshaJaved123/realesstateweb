@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
           <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-          <a className="text-teal-700 leading-relaxed">realestateagency.com</a>
+          <a className="text-stone-700 leading-relaxed">realestateagency.com</a>
           <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
           <p className="leading-relaxed">123-456-7890</p>
         </div>
@@ -38,17 +38,17 @@ const Contact = () => {
       <p className="leading-relaxed mb-5 text-gray-600">Send us your quries regarding our services.</p>
       <div className="relative mb-4">
         <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-        <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+        <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
       </div>
       <div className="relative mb-4">
         <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-        <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+        <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
       </div>
       <div className="relative mb-4">
         <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-        <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" defaultValue={""} />
+        <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-stone-700 focus:ring-2 focus:ring-stone-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" defaultValue={""} />
       </div>
-      <button type="submit" value="Send" className="text-white bg-teal-600 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg">Send</button>
+      <button type="submit" value="Send" className="text-white bg-stone-600 border-0 py-2 px-6 focus:outline-none hover:bg-stone-600 rounded text-lg">Send</button>
     </form>
   </div>
 </section>

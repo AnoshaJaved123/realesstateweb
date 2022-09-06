@@ -63,7 +63,7 @@ const Signup = () => {
           <div className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
           <div className="item-center">
             <Image className='item-center' src='/icon.png' alt='img' width={400} height={300}></Image>
-            <h1 className="text-center sm:text-3xl text-2xl font-medium title-font mb-4 text-teal-600">Real Estate Agency</h1>
+            <h1 className="text-center sm:text-3xl text-2xl font-medium title-font mb-4 text-stone-600">Real Estate Agency</h1>
 
             </div>
             <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
@@ -71,22 +71,22 @@ const Signup = () => {
                 <h1 className="text-center text-3xl font-semibold mb-5">Sign Up</h1>
                 {/* Name input */}
                 <div className="mb-6">
-                  <input value={name} onChange={handleChange} readOnly={true} type="text" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-teal-600 focus:outline-none" name="name" placeholder="Name" />
+                  <input value={name} onChange={handleChange} readOnly={true} type="text" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-stone-600 focus:outline-none" name="name" placeholder="Name" />
                 </div>
 
                 {/* Email input */}
                 <div className="mb-6">
-                  <input value={email} onChange={handleChange} readOnly={true} type="email" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-teal-600 focus:outline-none" name="email" placeholder="Email address" />
+                  <input value={email} onChange={handleChange} readOnly={true} type="email" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-stone-600 focus:outline-none" name="email" placeholder="Email address" />
                 </div>
                 {/* Password input */}
                 <div className="mb-6">
-                  <input value={password} onChange={handleChange} type="password" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-teal-600 focus:outline-none" name="password" placeholder="********" />
+                  <input value={password} onChange={handleChange} type="password" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-stone-600 focus:outline-none" name="password" placeholder="********" />
                 </div>
                 <div className="mb-6">
-                  <input value={email} onChange={handleChange} type="email" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-teal-600 focus:outline-none" name="email" placeholder="Email address" />
+                  <input value={email} onChange={handleChange} type="email" className="block w-full px-2 py-2 text-lg  font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-stone-600 focus:outline-none" name="email" placeholder="Email address" />
                 </div>
                 <div className="text-center lg:text-left">
-                <button  onClick={handleSubmit} type="button" className="inline-block bg-transparent text-lg my-2 hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-1 px-4 border border-teal-500 hover:border-transparent">
+                <button  onClick={handleSubmit} type="button" className="inline-block bg-transparent text-lg my-2 hover:bg-stone-500 text-stone-700 font-semibold hover:text-white py-1 px-4 border border-stone-500 hover:border-transparent">
                   Sign Up
                   </button>
                   <p className="text-sm font-semibold mt-2 pt-1 mb-0">

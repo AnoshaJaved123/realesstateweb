@@ -18,7 +18,7 @@ const Buy = ({ property }) => {
                 <div className="container px-5 py-16 mx-auto">
                     <div className="flex flex-wrap -m-4">
                         <div className="flex flex-col text-center w-full mb-3">
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-teal-600">Find Properties to Buy</h1>
+                            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-stone-600">Find Properties to Buy</h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn , prism food truck ugh squid celiac humblebrag.</p>
                             {prop === null && <>
                             <h2 className='text-center text-red-500'>No Property Available</h2>
@@ -60,7 +60,7 @@ const Buy = ({ property }) => {
 
                                   </div>
                                     <Link passHref={true} key={p._id} href={`/property/${p._id}`} ><a>
-                                        <button className='w-full  bg-transparent text-center items-center my-1 mx-1 hover:bg-teal-700 text-teal-700 font-semibold hover:text-white py-1 px-1 border border-teal-700 hover:border-transparent'>DETAIL</button>
+                                        <button className='w-full  bg-transparent text-center items-center my-1 mx-1 hover:bg-stone-700 text-stone-700 font-semibold hover:text-white py-1 px-1 border border-stone-700 hover:border-transparent'>DETAIL</button>
                                     </a></Link>
                                 </div>
 
@@ -69,7 +69,7 @@ const Buy = ({ property }) => {
                         <div className="p-4 justify-center">
                             <Link href={'/uploadProperty'}><a>
                                 <div className="h-full flex flex-col items-center text-center">
-                                    <MdAdd size={200} color={'#008080'} className='hover:bg-teal-100' />
+                                    <MdAdd size={200} color={'#38464B'} className='hover:bg-stone-100' />
                                     <div className="w-full">
                                         <h2 className="title-font font-medium text-lg text-gray-900">Add New Property</h2>                                </div>
                                 </div>
