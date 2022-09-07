@@ -54,10 +54,10 @@ function MyApp({ Component, pageProps }) {
 
 
   return <>
-    <Script
+    {/* <Script
       src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"
       strategy="beforeInteractive"
-    />
+    /> */}
     <GoogleOAuthProvider clientId="1097122749837-uvs88brd5o75cutojhbo37275gs54r47.apps.googleusercontent.com">
 
       {key && <Header
