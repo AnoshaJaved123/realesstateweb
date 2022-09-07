@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar'
 import Cookies from 'js-cookie'
 import { googleLogout } from '@react-oauth/google';
-
+import Script from 'next/script';
 function MyApp({ Component, pageProps }) {
   const [user, setuser] = useState({ value: null })
   const [name, setName] = useState('')
@@ -54,6 +54,10 @@ function MyApp({ Component, pageProps }) {
 
 
   return <>
+    <Script
+      src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"
+      strategy="beforeInteractive"
+    />
     <GoogleOAuthProvider clientId="1097122749837-uvs88brd5o75cutojhbo37275gs54r47.apps.googleusercontent.com">
 
       {key && <Header
