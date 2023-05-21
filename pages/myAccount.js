@@ -24,14 +24,9 @@ const MyAccount = ({data,error}) => {
      setEmail(Cookies.get('googleemail'))
      settoken(Cookies.get('token'))
      if (error) {
-      // Cookies.remove('token')
-      // setcProduct(products)
       router.push('/')
   }
-  //  if (!localStorage.getItem('token')) {
-  //     router.push('/')
-  //  }
-  }, [])
+   }, [])
 
 
   const handleupdate = async (pId)=>{

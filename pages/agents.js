@@ -39,7 +39,7 @@ const Agents = ({agent}) => {
 export const getServerSideProps = async (context) => {
   mongoose.connect(process.env.MONGO_URL)
   
-  let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/getAgents`)
+  let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/getuser`)
   const agent = await res.json()
  
   console.log("agent data", agent)
